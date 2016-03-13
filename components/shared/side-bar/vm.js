@@ -1,0 +1,2 @@
+"use strict";!function(e){"function"==typeof define&&define.amd&&define(["text!./view.html","globals","knockout","app/data-context-labels"],e)}(function(e,t,i,a){function l(e){var l=this;this.email=t.email,this.emailLink="mailto:"+this.email,this.labels=i.observableArray([]),a.labels.getSummaries().then(function(e){l.labels(e)})}return{viewModel:l,template:e}});
+//# sourceMappingURL=../../../maps/components/shared/side-bar/vm.js.map

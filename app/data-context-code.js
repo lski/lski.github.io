@@ -1,0 +1,2 @@
+"use strict";!function(e){"function"==typeof define&&define.amd&&define(["lib/request","lib/url"],e)}(function(e,t){console.log("app/data-context");var n={get:function(n){return n=n||20,e.get(t.resolveApi("/api/repo?size="+n)).then(function(e){return _.chain(e.items).reject(function(e){return/(^-DEPRECATED-|lski\.github\.io)/i.test(e.name)}).map(function(e){return{id:e.id,title:e.name,body:e.description,viewLink:e.html_url,target:"_blank",displayDate:e.updated_at,showInResults:!0}}).value()})}};return{repos:n}});
+//# sourceMappingURL=../maps/app/data-context-code.js.map
