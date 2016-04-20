@@ -1,0 +1,2 @@
+"use strict";var dispatcher=dispatcher,constants=constants,ctx=ctx,contentsActions={newItem:function(){dispatcher.dispatch({action:constants.NEW_ITEM_ADDED})},deleteItem:function(t){ctx.deleteItem(t).then(function(){dispatcher.dispatch({action:constants.ITEM_DELETED,data:t})})},setSelectedFolder:function(t){dispatcher.dispatch({action:constants.SELECTED_FOLDER_CHANGED,data:t})},setSelectedItem:function(t){dispatcher.dispatch({action:constants.SELECTED_ITEM_CHANGED,data:t})}};
+//# sourceMappingURL=../../maps/app/actions/contents-actions.js.map
