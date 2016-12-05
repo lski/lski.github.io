@@ -2,11 +2,12 @@
 		<script src="//cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js" data-slave="http://192.168.99.1:52948/cors-proxy"></script>
 	<![endif]--><!--[if lt IE 9]>
 		<script src="/lib/ielt9-bundle.min.js"></script>
-	<![endif]--></head><body><div id=file-browser></div><script src=lib/infrastructure.js></script><script src=app/constants.js></script><script src=app/data-context.js></script><script src=app/dispatcher.js></script><script src=app/actions/folder-actions.js></script><script src=app/stores/folder-store.js></script><script src=app/actions/contents-actions.js></script><script src=app/stores/contents-store.js></script><script src=app/browser-tree-node.js></script><script src=app/browser-folder-tree.js></script><script src=app/browser-folder-content-item.js></script><script src=app/browser-folder-contents.js></script><script src=app/browser-details-bar.js></script><script src=app/browser-upload.js></script><script src=app/browser.js></script><script>
+	<![endif]--></head><body><div id=file-browser></div><script src=lib/infrastructure.js></script><script src=app/data-context.js></script><script src=app/browser-tree-node.js></script><script src=app/browser-folder-tree.js></script><script src=app/browser-folder-content-item.js></script><script src=app/browser-folder-contents.js></script><script src=app/browser-details-bar.js></script><script src=app/browser-upload.js></script><script src=app/browser.js></script><script>
 		
 		function Run(apiUrl, token) {
 			// As we are using globals
 			window.ctx = new DataContext(apiUrl, token);
+			// Now start up the UI
 			ReactDOM.render(React.createElement(Browser), document.getElementById('file-browser'));
 		}
 		

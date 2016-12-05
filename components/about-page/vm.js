@@ -1,2 +1,2 @@
-"use strict";!function(t){"function"==typeof define&&define.amd&&define(["knockout","text!./view.html","lib/knockout-bindings-tabs"],t)}(function(t,n){return{template:n}});
+"use strict";define(["knockout","text!./view.html","lib/knockout-bindings-tabs"],function(t,e){return{template:e}});
 //# sourceMappingURL=../../maps/components/about-page/vm.js.map

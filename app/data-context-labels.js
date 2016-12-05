@@ -1,2 +1,2 @@
-"use strict";!function(e){"function"==typeof define&&define.amd&&define(["lib/request","lib/url"],e)}(function(e,i){return{labels:{getSummaries:function(){return e.get(i.resolveApi("/api/label/summary"))}}}});
+"use strict";define(["lib/request","lib/url"],function(e,r){return{labels:{getSummaries:function(){return e.get(r.resolveApi("/api/label/summary"))}}}});
 //# sourceMappingURL=../maps/app/data-context-labels.js.map

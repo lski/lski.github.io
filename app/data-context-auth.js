@@ -1,2 +1,2 @@
-"use strict";!function(e){"function"==typeof define&&define.amd&&define(["lib/request","lib/url"],e)}(function(e,n){var t={login:function(t,r){return e.post(n.resolveApi("/token"),"grant_type=password&username="+t+"&password="+r,{headers:{"content-type":"application/x-www-form-urlencoded"}})}};return t});
+"use strict";define(["lib/request","lib/url"],function(e,r){var n={login:function(n,t){return e.post(r.resolveApi("/token"),"grant_type=password&username="+n+"&password="+t,{headers:{"content-type":"application/x-www-form-urlencoded"}})}};return n});
 //# sourceMappingURL=../maps/app/data-context-auth.js.map
