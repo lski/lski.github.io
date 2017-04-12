@@ -1,2 +1,0 @@
-"use strict";define(["text!./view.html","knockout","app/config","lib/auth","lib/url","lib/knockout-bindings-modal","lib/knockout-bindings-iframe"],function(i,n,e,o,t){function r(){var i=this;i.src=l,i.onload=function(){(this.contentWindow||this).Run(t.resolveApi(""),o.token)}}var l=e&&e.fileBrowser&&e.fileBrowser.browserUrl||"/browser/index.htm";return{viewModel:r,template:i}});
-//# sourceMappingURL=../../../maps/components/shared/file-browser/vm.js.map

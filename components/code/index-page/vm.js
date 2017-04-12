@@ -1,2 +1,0 @@
-"use strict";define(["knockout","text!./view.html","app/data-context-code","lib/knockout-bindings-datetime"],function(e,o,t){function r(){var o=this;o.repos=e.observableArray([]),o.loading=e.observable(!0),o.error=e.observable(!1),o.hasRepos=e.pureComputed(function(){return this.repos().length>0},this),t.repos.get(100).then(function(e){o.repos(e),o.loading(!1)})["catch"](function(e){o.loading(!1),o.error(!0),console.log("Error occured trying to get the repositories",e)})}return{viewModel:r,template:o}});
-//# sourceMappingURL=../../../maps/components/code/index-page/vm.js.map

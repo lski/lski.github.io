@@ -1,11 +1,62 @@
-<!DOCTYPE html><!--[if lt IE 8 ]> <html class="ielt8"> <![endif]--><!--[if lt IE 9 ]> <html class="ielt9">	<![endif]--><!--[if IE 9 ]> <html class="ie9">	<![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]--><head><meta http-equiv=X-UA-Compatible content="IE=edge"><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=author content="Lee Cooper"><meta name=copyright content="Lee Cooper"><meta name=keywords content="Lski, Nottingham, developer, javascript, c#, webapi, mvc"><meta name=application-name content="Lski Blog"><meta name=description content="Lski, a developers ideas on useful things he doesnt want to forget"><title>Lski: Tiny Ideas</title><link rel=stylesheet href="/content/app.css?v=20160414"><script>(function(n){n.host==="www.lski.uk"&&n.protocol==="http:"&&n.assign("https://www.lski.uk"+n.search+n.hash)})(window.location);</script><!--[if lte IE 9]>
-		<script src="//cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js" data-slave="https://lski-web-api.azurewebsites.net/cors-proxy"></script>
-	<![endif]--><!--[if lt IE 9]>
-		<script src="/lib/ielt9-bundle.min.js"></script>
-	<![endif]--><script>var appInsights=window.appInsights||function(n){function f(n){t[n]=function(){var i=arguments;t.queue.push(function(){t[n].apply(t,i)})}}var t={config:n},r=document,e=window,o="script",s=r.createElement(o),i,u;for(s.src=n.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)f("track"+i.pop());return n.disableExceptionTracking||(i="onerror",f("_"+i),u=e[i],e[i]=function(n,r,f,e,o){var s=u&&u(n,r,f,e,o);return s!==!0&&t["_"+i](n,r,f,e,o),s}),t}({"instrumentationKey":"97bb2db7-c086-4c81-91a2-acc853a5bc0d"});window.appInsights=appInsights;</script></head><body><header class=page-header data-bind="component: { name: 'header-nav', params: { route: route } }"></header><div class=page-wrapper><div class=container><div class=row><div class="col-sm-10 col-xs-12"><div id=page class=body-content data-bind="component: { name: route().page, params: route }"><div class=loading-block></div></div></div><div class="col-sm-2 hidden-xs"><div data-bind="component: 'side-bar'"></div></div></div></div></div><footer class=page-footer data-bind="component: 'footer-nav'"></footer><script data-main=/app/app src=/lib/infrastructure.js data-app='{"urls":{ "api":"https://lski-web-api.azurewebsites.net/"}}'></script><script>
-		window.cookieconsent_options = {
-			learnMore: 'More info',
-			theme: false,
-			link: "/#privacy"
-		};
-	</script><script type=text/javascript src=/vendor/cookieconsent.latest.min.js></script></body></html>
+<!DOCTYPE html>
+<!--[if lt IE 9 ]> <html class="ielt9">	<![endif]-->
+<!--[if IE 9 ]>    <html class="ie9">	<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Lee Cooper" />
+	<meta name="copyright" content="Lee Cooper" />
+	<meta name="keywords" content="Lski, UK, Nottingham, Edinburgh, developer, javascript, c#, webapi, mvc, core, react, webpack, angular" />
+	<meta name="application-name" content="Lski Blog" />
+	<meta name="description" content="Lski, a developers ideas on useful things he doesnt want to forget" />
+
+	<title>Lski: Tiny Ideas</title>
+
+	<link rel="stylesheet" href="/assets/content/app.css" />
+
+	<script>
+		(function (n) { n.host === "www.lski.uk" && n.protocol === "http:" && n.assign("https://www.lski.uk" + n.search + n.hash) })(window.location);
+
+		window.Promise || (function (w, d) { (function(src) { var t = 'script', e = d.createElement(t); e.src = src; d.head.appendChild(e); })('https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.0/es6-promise.auto.min.js'); })(window, document);
+
+		var appInsights = window.appInsights || function (n) { function f(n) { t[n] = function () { var i = arguments; t.queue.push(function () { t[n].apply(t, i) }) } } var t = { config: n }, r = document, e = window, o = "script", s = r.createElement(o), i, u; for (s.src = n.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)f("track" + i.pop()); return n.disableExceptionTracking || (i = "onerror", f("_" + i), u = e[i], e[i] = function (n, r, f, e, o) { var s = u && u(n, r, f, e, o); return s !== !0 && t["_" + i](n, r, f, e, o), s }), t }({ "instrumentationKey": "97bb2db7-c086-4c81-91a2-acc853a5bc0d" }); window.appInsights = appInsights;
+	</script>
+
+	<!--[if lte IE 9]>
+		<script data-slave="https://lski-web-api.azurewebsites.net/cors-proxy" src="https://cdnjs.cloudflare.com/ajax/libs/xdomain/0.7.5/xdomain.min.js" integrity="sha256-7ZYkJs1og63HNZYNAsWrwfIrLrYn+E1J9P1XROjm1o0=" crossorigin="anonymous"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div id="app"></div>
+
+	<!--[if IE 9 ]>
+		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+		<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+		<script src="/assets/mainfest.js"></script>
+		<script src="/assets/vendor.js"></script>
+		<script src="/assets/app.js" data-app='{"api":"https://lski-web-api.azurewebsites.net"}'></script>
+	<![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script defer src="https://unpkg.com/react@15/dist/react.min.js"></script>
+	<script defer src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+	<script defer src="/assets/mainfest.js"></script>
+	<script defer src="/assets/vendor.js"></script>
+	<script defer src="/assets/app.js" data-app='{"api":"https://lski-web-api.azurewebsites.net"}'></script>
+	<!--<![endif]-->
+
+	<link href="/assets/content/cookieconsent.min.css" rel="stylesheet" />
+	<script type="text/javascript" src="/assets/vendor/cookieconsent.min.js"></script>
+	<script>
+		(function (cc) { cc.initialise({ content: { href: "/#privacy" }, palette: { popup: { background: "#222" }, button: { background: "#f1d600" } } }); })(window.cookieconsent);
+	</script>
+</body>
+
+</html>

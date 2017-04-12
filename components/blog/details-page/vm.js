@@ -1,2 +1,0 @@
-"use strict";define(["knockout","text!./view.html","app/data-context-blog","lib/auth","lib/knockout-bindings-highlight","lib/knockout-bindings-ext","lib/knockout-bindings-datetime"],function(t,e,o,n){function i(e){var i=this;i.loaded=t.observable(!1),i.model=t.observable(),i.notFound=t.observable(),i.authenticated=t.observable(n.authenticated()),o.blogs.getById(e.id).done(function(t){t?i.model(t):i.notFound(!0),i.loaded(!0)})}return{viewModel:i,template:e}});
-//# sourceMappingURL=../../../maps/components/blog/details-page/vm.js.map
