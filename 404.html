@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"></head></head><body><script>
 (function(l){
-    console && console.log(l.pathname + l.search + l.hash);
     sessionStorage.setItem('initial-url', l.pathname + l.search + l.hash);
-    console && console.log('redirect');
-    l.replace('/');
+    l.replace(l.protocol + '//' + l.host + '/');
 })(window.location);
 </script></body></html>
