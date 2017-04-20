@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]> <html class="ielt9">	<![endif]-->
-<!--[if IE 9 ]>    <html class="ie9">	<![endif]-->
+<!--[if lte IE 9 ]> <html class="ielte9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html class="">
 <!--<![endif]-->
@@ -35,7 +34,12 @@
 
 <body>
 
-	<div id="app"></div>
+	<div class="not-supported">
+		<p>I am sorry but your browser is no longer supported.</p>
+		<p>Please try again via a modern browser. E.g. Firefox, Chrome, Edge, Safari, plus many others</p>
+	</div>
+
+	<div id="app" class="supported"></div>
 
 	<!--[if IE 9 ]>
 		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
