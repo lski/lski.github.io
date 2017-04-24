@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!--[if lte IE 9 ]> <html class="ielte9"> <![endif]-->
+<!--[if lt IE 9 ]> <html class="ielt9">	<![endif]-->
+<!--[if IE 9 ]>    <html class="ie9">	<![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html class="">
 <!--<![endif]-->
@@ -17,7 +18,7 @@
 
 	<title>Lski: Tiny Ideas</title>
 
-	<link rel="stylesheet" href="/assets/content/app.css?v=7" />
+	<link rel="stylesheet" href="/assets/content/app.css?v=8" />
 
 	<script>
 		(function (n) { n.host === "www.lski.uk" && n.protocol === "http:" && n.assign("https://www.lski.uk" + n.search + n.hash) })(window.location);
@@ -34,26 +35,26 @@
 
 <body>
 
-	<!--<div >
+	<div class="unsupported">
 		<p>I am sorry but your browser is no longer supported.</p>
 		<p>Please try again via a modern browser. E.g. Firefox, Chrome, Edge, Safari, plus many others</p>
-	</div>-->
+	</div>
 
-	<div id="app"></div>
+	<div id="app" class="supported"></div>
 
 	<!--[if IE 9 ]>
 		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
 		<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-		<script src="/assets/mainfest.js?v=7"></script>
+		<script src="/assets/mainfest.js?v=8"></script>
 		<script src="/assets/vendor.js"></script>
-		<script src="/assets/app.js?v=7" data-app='{"api":"https://lski-web-api.azurewebsites.net"}'></script>
+		<script src="/assets/app.js?v=8" data-app='{"api":"https://lski-web-api.azurewebsites.net"}'></script>
 	<![endif]-->
 	<!--[if (gt IE 9)|!(IE)]><!-->
 	<script defer src="https://unpkg.com/react@15/dist/react.min.js"></script>
 	<script defer src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-	<script defer src="/assets/mainfest.js?v=7"></script>
+	<script defer src="/assets/mainfest.js?v=8"></script>
 	<script defer src="/assets/vendor.js"></script>
-	<script defer src="/assets/app.js?v=7" data-app='{"api":"https://lski-web-api.azurewebsites.net"}'></script>
+	<script defer src="/assets/app.js?v=8" data-app='{"api":"https://lski-web-api.azurewebsites.net"}'></script>
 	<!--<![endif]-->
 
 	<link href="/assets/content/cookieconsent.min.css" rel="stylesheet" />
