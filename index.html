@@ -9,10 +9,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="utf-8" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="author" content="Lee Cooper" />
 	<meta name="copyright" content="Lee Cooper" />
-	<meta name="keywords" content="Lski, UK, Nottingham, Edinburgh, developer, javascript, c#, webapi, mvc, core, react, webpack, angular" />
+	<meta name="keywords" content="Lski, UK, Nottingham, Edinburgh, developer, javascript, c#, webapi, mvc, core, react, webpack, angular"/>
 	<meta name="application-name" content="Lski Blog" />
 	<meta name="description" content="Lski, a developers ideas on useful things he doesnt want to forget" />
 
@@ -20,10 +20,18 @@
 
 	<link rel="stylesheet" href="/assets/content/app.css?v=8" />
 
+	<style>
+		@media (max-width: 319px) {
+			body {
+				width: 320px;
+			}
+		}
+	</style>
+
 	<script>
 		(function (n) { n.host === "www.lski.uk" && n.protocol === "http:" && n.assign("https://www.lski.uk" + n.search + n.hash) })(window.location);
 
-		window.Promise || (function (w, d) { (function(src) { var t = 'script', e = d.createElement(t); e.defer = false; e.async = false; e.src = src; d.head.appendChild(e); })('https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.0/es6-promise.auto.min.js'); })(window, document);
+		window.Promise || (function (w, d) { (function (src) { var t = 'script', e = d.createElement(t); e.defer = false; e.async = false; e.src = src; d.head.appendChild(e); })('https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.0/es6-promise.auto.min.js'); })(window, document);
 
 		var appInsights = window.appInsights || function (n) { function f(n) { t[n] = function () { var i = arguments; t.queue.push(function () { t[n].apply(t, i) }) } } var t = { config: n }, r = document, e = window, o = "script", s = r.createElement(o), i, u; for (s.src = n.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)f("track" + i.pop()); return n.disableExceptionTracking || (i = "onerror", f("_" + i), u = e[i], e[i] = function (n, r, f, e, o) { var s = u && u(n, r, f, e, o); return s !== !0 && t["_" + i](n, r, f, e, o), s }), t }({ "instrumentationKey": "97bb2db7-c086-4c81-91a2-acc853a5bc0d" }); window.appInsights = appInsights;
 	</script>
