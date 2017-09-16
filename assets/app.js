@@ -153,7 +153,7 @@ function(e,t){e.exports={spinner:"XVGf6AbfWUKuEXYd6fRHb"}},/*!******************
 function(e,t){},/*!*************************************!*\
   !*** ./components/home/styles.scss ***!
   \*************************************/
-function(e,t){e.exports={headerButton:"_3Cp76ACsiT7G8cUB5rLf2U","vertical-splitter":"NKuxi7xhW4DU7_UX9K18Z"}},/*!**************************************!*\
+function(e,t){e.exports={headerButton:"_3Cp76ACsiT7G8cUB5rLf2U","vertical-splitter":"NKuxi7xhW4DU7_UX9K18Z",verticalSplitter:"NKuxi7xhW4DU7_UX9K18Z"}},/*!**************************************!*\
   !*** ./components/label/styles.scss ***!
   \**************************************/
 function(e,t){e.exports={label:"_3VHK89KpgnroDpH0M_CsMC"}},/*!***************************************!*\
