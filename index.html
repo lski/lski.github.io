@@ -23,12 +23,11 @@
 	<script>
 
 !(function (p, l, e) {
-	var spaUrl = sessionStorage.getItem('initial-url');
-	if (spaUrl) {
-		sessionStorage.removeItem('initial-url');
-		return e.assign('https://lski.uk' + spaUrl);
-	} else if (/^http:\/\/(?!(lo|\d{1,3}))/.test(e.origin)) {
-		return e.assign('https://lski.uk' + e.search + e.hash);
+    if (/^http:\/\/(?!(lo|\d{1,3}))/.test(e.origin)) {
+		var spaUrl = sessionStorage.getItem('initial-url');
+		// We are on http, so we need to redirect regardless, so either the url saved by 404.html or the raw url that hit this page
+        var url = spaUrl ? 'https://lski.uk'+spaUrl : 'https://lski.uk' + e.search + e.hash;
+		return e.assign(url);
 	}
 
 	Object.assign ||
