@@ -1,1 +1,0 @@
-{"version":3,"sources":["app/dispatcher.js"],"names":["Dispatcher","Flux","dispatcher"],"mappings":"AAAA,YAEA,IAAIA,YAAaC,KAAKD,WAElBE,WAAa,GAAIF","file":"app/dispatcher.js","sourcesContent":["\"use strict\";\n\nvar Dispatcher = Flux.Dispatcher;\n\nvar dispatcher = new Dispatcher();"],"sourceRoot":"/source/"}

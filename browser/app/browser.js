@@ -1,2 +1,0 @@
-"use strict";var React=React,BrowserUpload=BrowserUpload,BrowserFolderTree=BrowserFolderTree,BrowserFolderContents=BrowserFolderContents,BrowserDetailsBar=BrowserDetailsBar,Browser=React.createClass({displayName:"Browser",render:function(){return React.createElement("div",{className:"file-browser"},React.createElement(BrowserUpload,null),React.createElement("div",{className:"browser"},React.createElement(BrowserFolderTree,null),React.createElement(BrowserFolderContents,null)),React.createElement(BrowserDetailsBar,null))}});
-//# sourceMappingURL=../maps/app/browser.js.map
